@@ -15,7 +15,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Ensure this matches the Node.js version in your package.json engines
+          node-version: '20'
+
+      - name: Install Heroku CLI # <--- ADD THIS STEP
+        run: |
+          curl https://cli-assets.heroku.com/install.sh | sh
 
       - name: Install dependencies
         run: npm install
@@ -24,5 +28,5 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.13.15
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }} # NOW USING A SECRET
-          heroku_email: ${{ secrets.HEROKU_EMAIL }}     # NOW USING A SECRET
+          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
