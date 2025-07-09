@@ -10,10 +10,11 @@
     <div class="container">
         <h1>My To-Do List</h1>
         <div class="input-section">
-            <input type="text" id="todo-input" placeholder="Add a new task...">
-            <button id="add-button">Add</button>
+            <label for="todo-input" class="sr-only">Add a new task</label>
+            <input type="text" id="todo-input" placeholder="Add a new task..." aria-label="New task input">
+            <button id="add-button" aria-label="Add task">Add</button>
         </div>
-        <ul id="todo-list">
+        <ul id="todo-list" role="list">
             </ul>
     </div>
     <script src="script.js"></script>
