@@ -1,5 +1,7 @@
 # Simple To-Do List App
 
+## Moving to https://github.com/apm-essence-groove/responsive-webpage-template
+
 A basic to-do list application built with HTML, CSS, and JavaScript, featuring persistent storage using `localStorage`.
 
 **🚀 Live Demo:** [View App on Heroku](https://apm-essence-groove-h004-fc1ff5ff5de7.herokuapp.com/)
