@@ -1,6 +1,7 @@
 # Simple To-Do List App
 
 ## DEPRECATED: Moved to https://github.com/apm-essence-groove/responsive-webpage-template
+This repository will be deleted after October 08, 2025.
 
 A basic to-do list application built with HTML, CSS, and JavaScript, featuring persistent storage using `localStorage`.
 
